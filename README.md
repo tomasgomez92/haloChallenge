@@ -1,16 +1,35 @@
 # Halo Challenge - QA Automation
   
 #  Index
+  0. Installation & Ejecution
   1. General Structure 
   2. Wdio config
   3. Feature files 
   4. Step definitions 
   5. Page Objects 
   6. Utils 
-  7. Configuration
   8. Test Coverage
 
-  # 0. This project contains an automated test suite for SauceDemo implemented using:
+  # 0. Installation & Ejecution
+
+  ## Installation
+
+  ```bash
+  npm install
+  ```
+  
+  ## Run Tests
+  
+  ```bash
+  npx wdio run ./wdio.conf.ts
+  ```
+  ## Run Specific Feature
+
+  ```bash
+  npx wdio run ./wdio.conf.ts --spec features/login.feature
+  ```
+  
+  This project contains an automated test suite for SauceDemo implemented using:
   
   - WebdriverIO
   - TypeScript
