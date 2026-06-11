@@ -1,7 +1,7 @@
 # Halo Challenge - QA Automation
   
 #  Index
-  1. Installation & Ejecution
+  1. Installation & Execution
   2. Project Overview
   3. Test Coverage
   4. General Structure
@@ -11,7 +11,7 @@
   9. Page Objects 
   10. Utils 
 
-  # 1. Installation & Ejecution
+  # 1. Installation & Execution
 
   ## Installation
 
@@ -83,11 +83,11 @@
     
   # 5. Wdio Config 🧠
   
-  This file contains all the configuration needed to run the tests. In order to understand it better please refer to https://webdriver.io/docs/configurationfile. The main sections to be configured in this documents are: 
+  This file contains all the configuration needed to run the tests. In order to understand it better please refer to https://webdriver.io/docs/configurationfile. The main sections to be configured in this document are: 
   
   - Capabilities array: it contains browser objects with the desired capabilities for each one. Right now the project supports Chrome. If you need to modify something browser-related this is the place to do it. 
-  - baseUrl: this is the url used to open the browser, ⚠️this value may be change but it must be returned to its default value before pushing code⚠️
-  - Reporters array: contains configuration for each desired reported
+  - baseUrl: this is the url used to open the browser, ⚠️this value may be changed but it must be returned to its default value before pushing code⚠️
+  - Reporters array: contains configuration for each desired reporters
   - cucumberOpts: object in which all cucumber configurations are stored.
   - Hooks: we use hooks to define actions that we need to execute at a certain moment.
   
@@ -104,7 +104,7 @@
   
   # 8. Page Objects 🖥
   
-  Page Object files are TypeScript classes that represent a page in our application (example: Login Page, Item Page, Inventory Page, etc). Each page inherits from a Page.ts class that contains shared methods as well as the constructor. Each Page Object class has a certain amount of elements (which represent the different elements on a page) and methods (which represent user actons). 
+  Page Object files are TypeScript classes that represent a page in our application (example: Login Page, Item Page, Inventory Page, etc). Each page inherits from a Page.ts class that contains shared methods as well as the constructor. Each Page Object class has a certain amount of elements (which represent the different elements on a page) and methods (which represent user actions). 
   
   SELECTORS: The elements are obtained using the selectors provided by WebdriverIO $$(condition) or $(condition). The first one returns all web elements that match that condition whilst the latter only returns the first result. That condition is a CSS selector that represent the element we are looking for. 
   
